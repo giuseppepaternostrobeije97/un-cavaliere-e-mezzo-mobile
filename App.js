@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
@@ -23,6 +24,19 @@ export default function App() {
         <Stack.Screen name="Arena" component={ArenaScreen} />
       </Stack.Navigator>
     </NavigationContainer>
+=======
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+import {Login} from 'un-cavaliere-e-mezzo-library'
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <Login/>
+      <StatusBar style="auto" />
+    </View>
+>>>>>>> 41cfe0033e11ed7eea4cddce2e8b30cecbede633
   );
 }
 
