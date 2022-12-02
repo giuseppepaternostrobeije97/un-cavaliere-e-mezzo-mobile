@@ -9,6 +9,7 @@ import RegistrationScreen from "./screens/RegistrationScreen";
 import GameScreen from "./screens/GameScreen";
 import LobbyScreen from "./screens/LobbyScreen";
 import ArenaScreen from "./screens/ArenaScreen";
+import RankingArena from "./screens/RankingArena";
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +22,7 @@ export default function App() {
         <Stack.Screen name="Game" component={GameScreen} />
         <Stack.Screen name="Lobby" component={LobbyScreen} />
         <Stack.Screen name="Arena" component={ArenaScreen} />
+        <Stack.Screen name="Ranking" component={RankingArena} />
       </Stack.Navigator>
     </NavigationContainer>
   );

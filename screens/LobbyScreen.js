@@ -3,11 +3,14 @@ import React from "react";
 
 import { Lobby } from "un-cavaliere-e-mezzo-library";
 
-const LobbyScreen = () => {
-  function handleLobby() {
-    navigation.navigate("Arena");
+const LobbyScreen = ({ navigation }) => {
+  function handleLobby(lobby) {
+    navigation.navigate("Arena", lobby);
   }
-  return <Lobby goLobby={handleLobby} />;
+  function handleGoRanking() {
+    navigation.navigate("Ranking");
+  }
+  return <Lobby goLobby={handleLobby} callbackRankingNav={handleGoRanking} />;
 };
 
 export default LobbyScreen;

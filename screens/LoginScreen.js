@@ -7,7 +7,11 @@ const LoginScreen = ({ navigation }) => {
     navigation.navigate("Lobby");
   }
 
-  return <Login callbackLogin={handleLogin} />;
+  const goToRegister = () => {
+    navigation.navigate("Register");
+  };
+
+  return <Login callbackLogin={handleLogin} callbackRegister={goToRegister} />;
 };
 
 export default LoginScreen;
